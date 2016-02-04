@@ -1,0 +1,15 @@
+galaxy_info:
+  author: wangsha
+  description: |
+    Ansible role to manage and run the postgres docker container.
+  license: MIT
+  min_ansible_version: 2.0
+  platforms:
+    - name: Ubuntu
+      versions:
+       - trusty
+  galaxy_tags:
+    - docker
+    - database
+    - sql
+dependencies: []

@@ -1,0 +1,24 @@
+---
+postgres_enabled: yes                      # Enable the role
+
+postgres_user: postgres
+postgres_password: postgres
+postgres_db: postgres
+postgres_data: /var/lib/postgresql/data
+
+docker_api_version: 1.21
+docker_postgres_name: postgres_1
+docker_postgres_image: postgres:latest
+docker_postgres_data_dir: /opt/postgres/data/
+docker_postgres_expose:
+  - 5432
+docker_postgres_ports:
+  - 5432:5432
+docker_postgres_env:
+  POSTGRES_DB: "{{ postgres_db }}"
+  POSTGRES_USER: "{{ postgres_user }}"
+  POSTGRES_PASSWORD: "{{ postgres_password }}"
+  PGDATA : "{{ postgres_data }}"
+docker_postgres_links: []
+docker_postgres_volumes:
+  - "{{ docker_postgres_data_dir }}:{{ postgres_data }}"
