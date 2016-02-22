@@ -2,6 +2,7 @@ docker-postgres
 ============
 
 [![Build Status](https://travis-ci.org/wangsha/docker-postgres.svg?branch=master)](https://travis-ci.org/wangsha/docker-postgres)
+[![Ansible Galaxy](https://img.shields.io/badge/AnsibleGalaxy-wangsha.docker--postgres-blue.svg)](https://galaxy.ansible.com/wangsha/docker-postgres/)
 
 Ansible role to manage and run the postgres docker container.
 
