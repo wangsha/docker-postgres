@@ -17,6 +17,7 @@
     expose: "{{ docker_postgres_expose }}"
     image: "{{ docker_postgres_image }}"
     links: "{{ docker_postgres_links }}"
+    volumes: "{{ docker_postgres_volumes }}"
     name: "{{ docker_postgres_name }}"
     ports: "{{ docker_postgres_ports }}"
     pull: always
