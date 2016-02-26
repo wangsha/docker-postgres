@@ -21,3 +21,4 @@ docker_postgres_env:
 docker_postgres_links: []
 docker_postgres_volumes:
   - "{{ docker_postgres_data_dir }}:{{ postgres_data }}"
+docker_postgres_memory_limit: 1g

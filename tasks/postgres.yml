@@ -18,6 +18,7 @@
     image: "{{ docker_postgres_image }}"
     links: "{{ docker_postgres_links }}"
     volumes: "{{ docker_postgres_volumes }}"
+    memory_limit: "{{ docker_postgres_memory_limit }}"
     name: "{{ docker_postgres_name }}"
     ports: "{{ docker_postgres_ports }}"
     pull: always
