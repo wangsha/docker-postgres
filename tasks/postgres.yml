@@ -21,6 +21,8 @@
     memory_limit: "{{ docker_postgres_memory_limit }}"
     name: "{{ docker_postgres_name }}"
     ports: "{{ docker_postgres_ports }}"
+    log_driver: "{{ docker_postgres_log_driver }}"
+    log_opt: "{{ docker_postgres_log_opt }}"
     pull: always
     restart_policy: always
     state: reloaded
