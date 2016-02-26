@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.3](https://github.com/wangsha/docker-postgres/tree/1.3) (2016-02-26)
+[Full Changelog](https://github.com/wangsha/docker-postgres/compare/1.2...1.3)
+
 ## [1.2](https://github.com/wangsha/docker-postgres/tree/1.2) (2016-02-26)
 [Full Changelog](https://github.com/wangsha/docker-postgres/compare/1.1...1.2)
 
