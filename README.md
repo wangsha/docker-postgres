@@ -35,6 +35,11 @@ look at
 [angstwad.docker_ubuntu](https://github.com/angstwad/docker.ubuntu) Galaxy
 role.
 
+Additional References
+---------------------
+- [default docker image](https://hub.docker.com/_/postgres/)
+
+
 License
 -------
 

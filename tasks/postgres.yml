@@ -1,14 +1,12 @@
-- name: Ensure docker postgres directories exist
-  become: true
+- name: Ensure docker postgres volume mapping host directories exist
   file:
     state: directory
-    path: "{{ item }}"
+    path: "{{ item | regex_replace('^(?P<host>.+):(?P<container>.+)$', '\\g<host>')}}"
   with_items:
-    - "{{ docker_postgres_data_dir }}"
+    - "{{ docker_postgres_directory_volumes }}"
   tags:
     - install
     - upgrade
-
 
 - name: Run docker postgres container
   docker:
