@@ -16,6 +16,7 @@ docker_postgres_links: []
 docker_postgres_directory_volumes:
   - "{{ docker_postgres_host_data_dir }}:{{ docker_postgres_container_data_dir }}"
 docker_postgres_file_volumes: []
+docker_postgres_template_path: ""
 docker_postgres_volumes: "{{ docker_postgres_directory_volumes + docker_postgres_file_volumes }}"
 docker_postgres_memory_limit: 1GB 
 docker_postgres_log_driver: syslog
