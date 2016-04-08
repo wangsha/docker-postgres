@@ -46,7 +46,6 @@
     pull: always
     restart_policy: always
     state: reloaded
-    volumes: "{{ docker_postgres_volumes }}"
   tags:
     - install
     - upgrade
