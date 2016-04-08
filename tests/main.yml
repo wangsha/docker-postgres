@@ -5,3 +5,4 @@
   roles:
     - role: 'docker-postgres'
       become: true
+      docker_postgres_ports: []
