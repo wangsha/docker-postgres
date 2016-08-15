@@ -23,4 +23,4 @@ docker_postgres_memory_limit: 512MB
 docker_postgres_log_driver: syslog
 docker_postgres_log_opt:
   syslog-facility: local0
-  syslog-tag: "{{ docker_postgres_name }}"
+  tag: "{{ docker_postgres_name }}"
